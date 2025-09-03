@@ -62,7 +62,7 @@ zinit snippet OMZ::plugins/sudo/sudo.plugin.zsh
 
 zinit light zsh-users/zsh-syntax-highlighting 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f $DOTFILES/.p10k.zsh ]] || source $DOTFILES/.p10k.zsh
 
 # fpath+=${ZDOTDIR:-~}/.zsh_functions
 zstyle ':completion:*' menu select

@@ -1,0 +1,81 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#555753"
+blue = "#3b8eea"
+cyan = "#29b8db"
+green = "#23d18b"
+magenta = "#d670d6"
+red = "#f14c4c"
+white = "#e5e5e5"
+yellow = "#f5f543"
+
+[colors.normal]
+black = "#2e3436"
+blue = "#2472c8"
+cyan = "#11a8cd"
+green = "#0dbc79"
+magenta = "#bc3fbc"
+red = "#cd3131"
+white = "#e5e5e5"
+yellow = "#e5e510"
+
+[colors.primary]
+background = "#1e1e1e"
+foreground = "#cccccc"
+
+[colors.selection]
+background = "#565656"
+text = "CellForeground"
+
+[font]
+builtin_box_drawing = true
+
+[font.normal]
+family = "MesloLGS NF"
+
+[[keyboard.bindings]]
+action = "Hide"
+key = "A"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "CreateNewWindow"
+key = "N"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Quit"
+key = "Q"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+
+[mouse]
+hide_when_typing = false
+
+[scrolling]
+history = 10000
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[window]
+opacity = 0.8
+title = "AlacrittyWd"
+
+[window.class]
+general = "AlacrittyWd"
+instance = "AlacrittyWd"
+
+[window.dimensions]
+columns = 80
+lines = 20
+
+[window.position]
+x = 936
+y = 517

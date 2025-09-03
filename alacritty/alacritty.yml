@@ -1,0 +1,80 @@
+
+colors:
+  # Default colors
+  primary:
+    background: '#1e1e1e' #Background from Dark Theme
+    foreground: '#cccccc'
+
+  # Selection colors
+  selection:
+    text: CellForeground
+    background: '#565656'
+
+  # Normal colors
+  normal:
+    black:   '#2e3436'
+    red:     '#cd3131'
+    green:   '#0dbc79'
+    yellow:  '#e5e510'
+    blue:    '#2472c8'
+    magenta: '#bc3fbc'
+    cyan:    '#11a8cd'
+    white:   '#e5e5e5'
+
+  # Bright colors
+  bright:
+    black:   '#555753'
+    red:     '#f14c4c'
+    green:   '#23d18b'
+    yellow:  '#f5f543'
+    blue:    '#3b8eea'
+    magenta: '#d670d6'
+    cyan:    '#29b8db'
+    white:   '#e5e5e5'
+draw_bold_text_with_bright_colors: true
+font:
+  normal:
+    family: "MesloLGS NF"
+  builtin_box_drawing: true
+selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+#shell:
+#  program: /bin/zsh
+# args:
+#   login
+#    - -l
+#    - -c
+#    - 'zellij attach --index 0 --create' 
+window:
+  opacity: 0.8
+  title: AlacrittyWd
+  class:
+    #Application instance name
+    instance: AlacrittyWd
+     #General application class
+    general: AlacrittyWd
+  dimensions:
+    columns: 80
+    lines: 20
+  position:
+    x: 936
+    y: 517
+mouse:  
+  # 点击配置
+  #
+  # 双击和三击的判定等待时间，数值越小，需要快速的双击才能判定为双击操作
+  # double_click: { threshold: 300 }
+  # triple_click: { threshold: 300 }
+  # 打字的时候临时隐藏鼠标SpawnNewInstance
+  hide_when_typing: false
+
+key_bindings:
+  - { key: A, mods: Alt, action: Hide }
+  - { key: N, mods: Control|Shift,action: CreateNewWindow }
+  - { key: Q, mods: Control|Shift,action: Quit }
+  - { key: F11 ,action: ToggleFullscreen  }

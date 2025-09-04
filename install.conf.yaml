@@ -19,7 +19,7 @@
        path: cargo/*
        relink: true
     ~/.gitconfig: .gitconfig
-    /etc/mpd.conf: mpd.conf
+    ~/.local/share/cantata/mpd/mpd.conf: mpd.conf
 - shell:
   - git submodule sync --recursive
 

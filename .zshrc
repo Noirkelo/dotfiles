@@ -99,3 +99,12 @@ export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 #go
 export PATH="$PATH:/usr/local/go/bin"
 export PATH=${PATH}:`go env GOPATH`/bin
+
+# HF mirror
+export HF_ENDPOINT=https://hf-mirror.com
+#HF_HOME
+
+
+# 
+export PATH="/usr/local/cuda-12.4/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda-12.4/lib64:$LD_LIBRARY_PATH"

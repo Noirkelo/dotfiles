@@ -1,0 +1,6 @@
+[tools]
+age = "latest"
+cosign = "latest"
+python = "3.12"
+slsa-verifier = "latest"
+sops = "latest"

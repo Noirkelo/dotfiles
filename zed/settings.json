@@ -1,0 +1,88 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette
+{
+  "title_bar": {
+    "show_branch_icon": true,
+    "show_user_picture": false,
+    "show_sign_in": false
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "minimap": {
+    "show": "always",
+    "display_in": "all_editors",
+    "thumb_border": "full"
+  },
+  "preview_tabs": {
+    "enable_preview_from_file_finder": true,
+    "enable_preview_from_code_navigation": true
+  },
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  "agent": {
+    "always_allow_tool_actions": true,
+    "single_file_review": false
+  },
+  "ui_font_size": 30,
+  "buffer_font_size": 30,
+  "ui_font_family": "Noto Sans",
+  "buffer_font_family": "MesloLGS NF",
+  "inlay_hints": {
+    // Global switch to toggle hints on and off, switched off by default.
+    "enabled": true,
+    // Toggle certain types of hints on and off, all switched on by default.
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    // Corresponds to null/None LSP hint type value.
+    "show_other_hints": true,
+    // Time to wait after editing the buffer, before requesting the hints,
+    // set to 0 to disable debouncing.
+    "edit_debounce_ms": 0,
+    // Time to wait after scrolling the buffer, before requesting the hints,
+    // set to 0 to disable debouncing.
+    "scroll_debounce_ms": 0
+  },
+  "experimental.theme_overrides": {
+    "title_bar.inactive_background": "#181818", // <= the color you need,
+    "syntax": {
+      "comment": {
+        "font_style": "italic"
+      }
+    }
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "auto_signature_help": true,
+  "lsp": {
+    "rust-analyzer": {
+      "format_on_save": true,
+      "binary": {
+        "path": "/home/noirkelo/.cargo/bin/rust-analyzer",
+        "args": []
+      }
+    }
+  },
+  "disable_ai": true,
+  "languages": {
+    "Rust": {
+      "prettier": true,
+      "format_on_save": true,
+      "code_actions_on_format": {}
+    },
+    "Python": {
+      "language_servers": ["!pylsp"]
+    }
+  }
+}

@@ -4,6 +4,8 @@
           create: true
 - clean: ["~", "~/bin"]
 - link:
+      ~/.gemini: gemini
+      ~/.skills: skills
       ~/.config/alacritty: alacritty
       ~/.zshrc: .zshrc
       ~/bin:
@@ -19,8 +21,13 @@
           path: cargo/*
           relink: true
       ~/.gitconfig: .gitconfig
-      ~/.local/share/cantata/mpd/mpd.conf: mpd.conf
+      /etc/mpd.conf: mpd.conf
       ~/.config/zed: zed
       ~/.config/mise: mise
+      ~/.config/opencode: opencode
+      ~/.local/share/cantata/mpd/mpd.conf: mpd.conf
 - shell:
-      - git submodule sync --recursive
+      - command: git submodule sync --recursive
+        stdout: true
+      - command: bash ./dconf.sh
+        stdout: true

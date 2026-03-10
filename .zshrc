@@ -42,7 +42,7 @@ TIMEFMT="%U user %S system %P cpu %*Es total"
 
 source $DOTFILES/zsh/p10k.zsh
 
-zinit ice depth=1; 
+zinit ice depth=1;
 zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-autosuggestions
 zinit light conda-incubator/conda-zsh-completion
@@ -60,7 +60,7 @@ zinit snippet OMZ::plugins/sudo/sudo.plugin.zsh
 #zinit ice lucid wait='1'
 #zinit snippet OMZ::plugins/git/git.plugin.zsh
 
-zinit light zsh-users/zsh-syntax-highlighting 
+zinit light zsh-users/zsh-syntax-highlighting
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f $DOTFILES/.p10k.zsh ]] || source $DOTFILES/.p10k.zsh
 
@@ -105,6 +105,15 @@ export HF_ENDPOINT=https://hf-mirror.com
 #HF_HOME
 
 
-# 
+#
 export PATH="/usr/local/cuda-12.4/bin:$PATH"
 export LD_LIBRARY_PATH="/usr/local/cuda-12.4/lib64:$LD_LIBRARY_PATH"
+
+#  clash setting 
+# 
+source /opt/clash/script/common.sh && source /opt/clash/script/clashctl.sh && watch_proxy
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+
+# opencode
+export PATH=/home/noirkelo/.opencode/bin:$PATH

@@ -6,27 +6,27 @@
 git-fetch-with-cli=true
 
 [build]
-rustc-wrapper = "sccache"
+
 incremental = true
-rustflags = [
-"-Ctarget-cpu=native",
-"-Clink-arg=-fuse-ld=mold"]
+# rustflags = [
+# "-Ctarget-cpu=native",
+# "-Clink-arg=-fuse-ld=mold"]
 
-[profile.dev]
-codegen-backend = "cranelift"
-debug = false
-opt-level = 1
+# [profile.dev]
+# codegen-backend = "cranelift"
+# debug = true
+# opt-level = 1
 
-[profile.dev.package."*"]
-codegen-backend = "llvm"
-opt-level = 3
+# [profile.dev.package."*"]
+# codegen-backend = "llvm"
+# opt-level = 3
 
-[profile.release]
-debug=true
-codegen-units = 1
-lto = true
-panic = "abort"
-strip = "symbols"
+# [profile.release]
+# debug=true
+# codegen-units = 1
+# lto = true
+# panic = "abort"
+# strip = "symbols"
 
-[unstable]
-codegen-backend = true
+# [unstable]
+# codegen-backend = true

@@ -4,3 +4,6 @@ cosign = "latest"
 python = "3.12"
 slsa-verifier = "latest"
 sops = "latest"
+
+[settings]
+experimental = true

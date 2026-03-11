@@ -124,3 +124,5 @@ export HF_ENDPOINT=https://hf-mirror.com
 export PATH="/usr/local/cuda-12.4/bin:$PATH"
 export LD_LIBRARY_PATH="/usr/local/cuda-12.4/lib64:$LD_LIBRARY_PATH"
 source /opt/clash/script/common.sh && source /opt/clash/script/clashctl.sh && watch_proxy
+
+. "$HOME/.local/bin/env"

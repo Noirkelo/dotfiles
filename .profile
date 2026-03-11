@@ -28,3 +28,5 @@ fi
 . "$HOME/.cargo/env"
 export PATH=~/.npm-global/bin:$PATH
 
+
+. "$HOME/.local/bin/env"

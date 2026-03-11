@@ -108,3 +108,12 @@ export HF_ENDPOINT=https://hf-mirror.com
 # 
 export PATH="/usr/local/cuda-12.4/bin:$PATH"
 export LD_LIBRARY_PATH="/usr/local/cuda-12.4/lib64:$LD_LIBRARY_PATH"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+
+# opencode
+export PATH=/home/noirkelo/.opencode/bin:$PATH
+
+# Created by `pipx` on 2026-03-09 17:59:19
+export PATH="$PATH:/home/noirkelo/.local/bin"
+
+. "$HOME/.local/bin/env"
